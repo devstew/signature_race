@@ -16,6 +16,17 @@
         text-decoration: none !important;
 
     }
+
+    /* Resize an element that has a width and height of zero to full size */
+    .showy {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Hide this everywhere, except for those that can’t read this code */
+    .no-showy {
+        display: none;
+    }
 </style>
 
 <div style="max-width: 600px; width: 100%">
@@ -45,22 +56,15 @@
             </tr>
             <tr>
                 <td colspan="2"
-                    style="line-height:1.6;color:rgba(13, 13, 13, 0.8);font-family:HelveticaNeue-Medium, sans-serif;font-size:16px;text-transform: uppercase;padding-bottom: 10px;">
-                    CTO
+                    style="line-height:1.6;color:rgba(13, 13, 13, 0.8);font-family:HelveticaNeue-Medium, sans-serif;font-size:16px;padding-bottom: 10px;text-transform: capitalize">
+                    Co-founder & CPO <br>
+                    Norseman Triathlon Finisher 2025
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="line-height:1.6;">
-                    <table cellspacing="0" cellpadding="0" border="0" class="padding-space">
-                        <tbody>
-                        <tr>
-                            <td style="padding-right:10px;"><span
-                                    style="font-family:HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;font-weight:bold">T:&nbsp;</span><span
-                                    style="font-family:HelveticaNeue-Regular, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;">+46 707 90 90 70</span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <td colspan="2" style="line-height:1.6;"><span
+                        style="font-family:HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;font-weight:bold;padding-right: 4px; padding-left:0">T:&nbsp;</span><span
+                        style="font-family:HelveticaNeue-Regular, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;">+46 707 21 21 25</span>
                 </td>
             </tr>
             <tr>
@@ -120,13 +124,19 @@
                     <table cellspacing="0" cellpadding="0" border="0" class="padding-space">
                         <tbody>
                         <tr>
-                            <td style="padding-right:17px;"><a class="socialMove" target="_blank"
+                            <td style="padding-right:17px;">
+                                <a class="socialMove" target="_blank"
                                                                href="https://www.race.se"
-                                                               style="display: inline-block;vertical-align:top;text-align: center;"><img
+                                                               style="display: inline-block;vertical-align:top;text-align: center;">
+                                <img
+                                        class="showy" width="0" height="0" src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.svg">
+                                <img
+                                    class="no-showy"
                                     width="148px"
                                     style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;"
                                     alt="raceid"
-                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.png"></a>
+                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.png">
+                            </a>
                             </td>
                         </tr>
                         </tbody>
