@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <title>Race Signature</title>
 </head>
 
@@ -25,6 +27,46 @@
     /*.no-showy {*/
     /*    display: none;*/
     /*}*/
+
+    @media (prefers-color-scheme: dark ) {
+        .divider-top {
+            border-bottom: 1px solid rgb(192, 191, 191) !important;
+        }
+
+        .name {
+            color: rgb(255, 255, 255) !important;
+        }
+
+        .title {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        .telephone {
+            color: rgb(167, 167, 167) !important;
+        }
+        .telephone-number {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        .email {
+            color: rgb(167, 167, 167) !important;
+        }
+        .email-address {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        .site {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        .dark-img {
+            display:block !important;
+        }
+
+        .light-img {
+            display:none !important;
+        }
+    }
 </style>
 
 <div style="max-width: 600px; width: 100%">
@@ -38,7 +80,8 @@
             </tr>
             <tr width="33%">
                 <td colspan="2"
-                    style="margin-top:50px; margin-bottom:50px; width:34%;height:0.5px;background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(192, 191, 191));">
+                    class="divider-top"
+                    style="margin-top:50px; margin-bottom:50px; width:34%;height:1px;border-bottom: 1px solid rgb(192, 191, 191)">
                 <td style="width:66%">
                     <span></span>
                 </td>
@@ -47,30 +90,33 @@
             </tr>
             <tr>
                 <td colspan="2" style="font-weight: 500;"><span
-                        style="font-family:HelveticaNeue-Bold, sans-serif;color: rgb(13, 13, 13);font-size:18px;font-weight: bold;">Nicklas</span>
+                        style="font-family:HelveticaNeue-Bold, sans-serif;color: rgb(13, 13, 13);font-size:18px;font-weight: bold;" class="name">Nicklas</span>
                     <span
-                            style="font-family:HelveticaNeue-Bold, sans-serif;color: rgb(13, 13, 13);font-size:18px;font-weight: bold;">Tingström</span>
+                            style="font-family:HelveticaNeue-Bold, sans-serif;color: rgb(13, 13, 13);font-size:18px;font-weight: bold;" class="name">Tingström</span>
                 </td>
             </tr>
             <tr>
                 <td colspan="2"
+                    class="title"
                     style="line-height:1.6;color:rgba(13, 13, 13, 0.8);font-family:HelveticaNeue-Medium, sans-serif;font-size:16px;padding-bottom: 10px;text-transform: capitalize">
                     Co-founder & CPO <br>
-                    Norseman Triathlon Finisher 2025
+                    <span style="white-space: nowrap;">Norseman Triathlon Finisher 2025</span>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="line-height:1.6;"><span
+                        class="telephone"
                         style="font-family:HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;font-weight:bold;padding-right: 4px; padding-left:0">T:&nbsp;</span><span
-                        style="font-family:HelveticaNeue-Regular, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;">+46 707 21 21 25</span>
+                        class="telephone-number" style="font-family:HelveticaNeue-Regular, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;">+46 707 21 21 25</span>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="line-height:1.6;" class="x-gmail-data-detectors"><span
+                        class="email"
                         style="font-family: HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;font-weight:bold">E:&nbsp;</span><a
                         style="text-decoration:none;cursor:pointer;color:rgba(13, 13, 13, 0.6)"
                         rel="noopener" target="_blank" href="mailto:nicklas@raceid.com"><span
-                        style="font-family:HelveticaNeue-Regular, sans-serif;text-decoration:none;color:rgba(13, 13, 13, 0.6);font-size:14px;margin-right:10px;">nicklas@raceid.com</span></a>
+                        class="email-address" style="font-family:HelveticaNeue-Regular, sans-serif;text-decoration:none;color:rgba(13, 13, 13, 0.6);font-size:14px;margin-right:10px;">nicklas@raceid.com</span></a>
                 </td>
             </tr>
             <tr>
@@ -79,7 +125,7 @@
                     <a
                             style="cursor:pointer;color:rgba(13, 13, 13, 0.6);text-decoration:none;"
                             rel="noopener" target="_blank" href="https://race.se/"><span
-                            style="font-family:HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;margin-right:10px;font-weight:bold">www.raceid.com</span>
+                            class="site" style="font-family:HelveticaNeue-Bold, sans-serif;color:rgba(13, 13, 13, 0.6);font-size:14px;margin-right:10px;font-weight:bold">www.raceid.com</span>
                     </a>
                 </td>
             </tr>
@@ -129,11 +175,19 @@
 <!--                                    <img-->
 <!--                                            alt="raceid_logo" class="showy" width="0" height="0" src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.svg">-->
                                 <img
+                                    class="dark-img"
                                     width="148px"
                                     style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;"
                                     alt="raceid"
-                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.png">
-                            </a>
+                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid_dm.png">
+
+                                    <img
+                                            class="light-img"
+                                            width="148px"
+                                            style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;"
+                                            alt="raceid"
+                                            src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.png">
+                                </a>
                             </td>
                         </tr>
                         </tbody>
