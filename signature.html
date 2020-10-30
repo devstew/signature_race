@@ -10,7 +10,7 @@
     <title>Race Signature</title>
 </head>
 
-<style>
+<style type="text/css">
     *[x-apple-data-detectors],  /* iOS */
     .x-gmail-data-detectors,    /* Gmail */
     .x-gmail-data-detectors *,
@@ -59,12 +59,46 @@
             color: rgb(167, 167, 167) !important;
         }
 
-        .dark-img {
+        .logo {
+            text-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+        }
+
+        [data-ogsc] .divider-top {
+            border-bottom: 1px solid rgb(192, 191, 191) !important;
+        }
+
+        [data-ogsc] .name {
+            color: rgb(255, 255, 255) !important;
+        }
+
+        [data-ogsc] .title {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        [data-ogsc] .telephone {
+            color: rgb(167, 167, 167) !important;
+        }
+        [data-ogsc] .telephone-number {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        [data-ogsc] .email {
+            color: rgb(167, 167, 167) !important;
+        }
+        [data-ogsc] .email-address {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        [data-ogsc] .site {
+            color: rgb(167, 167, 167) !important;
+        }
+
+        [data-ogsc] .dark-img {
             display:block !important;
         }
 
-        .light-img {
-            display:none !important;
+        [data-ogsc] .light-img {
+            display:none !important; display:none !important;
         }
     }
 </style>
@@ -173,20 +207,19 @@
                                                                href="https://www.race.se"
                                                                style="display: inline-block;vertical-align:top;text-align: center;">
 <!--                                    <img-->
-<!--                                            alt="raceid_logo" class="showy" width="0" height="0" src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.svg">-->
-                                <img
-                                    class="dark-img"
-                                    width="148px"
-                                    style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;"
-                                    alt="raceid"
-                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid_dm.png">
+<!--                                    class="light-img"-->
+<!--                                    width="148px"-->
+<!--                                    style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;display:none; overflow:hidden;"-->
+<!--                                    alt="raceid"-->
+<!--                                    src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid_dm.png">-->
 
-                                    <img
-                                            class="light-img"
-                                            width="148px"
-                                            style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px;"
-                                            alt="raceid"
-                                            src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.png">
+                                  <img
+                                          class="logo"
+                                        width="148px"
+                                        style="moz-border-radius:0px;khtml-border-radius:0px;o-border-radius:0px;webkit-border-radius:0px;ms-border-radius:0px;border-radius: 0px;width: 148px"
+                                        alt="raceid"
+                                        src="https://raw.githubusercontent.com/devstew/signature_race/main/images/raceid.jpg">
+
                                 </a>
                             </td>
                         </tr>
